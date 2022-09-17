@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../CSS/index.css">
+<link rel="icon" type="image/x-icon" href="../images/icone.ico">
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+<title>FAQ</title>
+</head>
+   <body>
+      <button id = "bouton" onclick="up()" ><i class="material-icons">arrow_upward</i></button>
+      
+      <div id = "Menu"  class ="menu">
+            <span id="ferme" onclick="fermemenu()">&#215;</span>
+         <div class = "deroulant">
+            <p> <i class="material-icons"><a href="../index.html">home</a> </i></p>
+            <p onclick="burger1()"><i class="material-icons">kitchen</i></p>
+               <div id = "sous-liste1" class="liste-menu">
+                  <ul>
+                     <li><a href="../Produit/produit.html#1" >Le Classico</a></li>
+                     <li><a href="../Produit/produit.html#2" >Le Mono</a></li>
+                     <li><a href="../Produit/produit.html#3" >Le Royal</a></li>
+                  </ul>
+               </div> 
+            <p> <i class="material-icons"><a>   forum</a> </i></p>
+            <p> <i class="material-icons"><a href="../Contact/contact.html">email</a> </i></p>
+           
+               
+   
+         </div>
+      </div>
+      <header id = "header" class = "header">   
+       
+         <div class="tete">  
+              <div id="menuburger">
+          <span  onclick="ouvremenu()">&#9776;</span>
+         </div>
+            <h1>2Cool </h1>
+         </div>
+       
+      <nav id = "nav" class = "nav"> 
+         <ul >
+            <li> <i class="material-icons"><a href="../index.html">home</a></i></li>
+            <li > <i class="material-icons">kitchen</i>
+               <ul class="menu-sous-liste">
+                  <li><a href="../Produit/produit.html#1" >Le Classico</a></li>
+                  <li><a href="../Produit/produit.html#2" >Le Mono</a></li>
+                  <li><a href="../Produit/produit.html#3" >Le Royal</a></li>
+               </ul>
+            </li>
+            <li > <i class="material-icons"><a>forum</a></i>
+
+            <li > <i class="material-icons"><a href="../Contact/contact.html">email</a></i>
+            </li>
+         </ul>
+      </nav>
+   </header>
+  
+   <main id = "main" class ="main">
+         
+      <div class = "contenu">
+      
+          <div class="faq">
+            <div class="questions"> 
+                  <h2> Où puis-je acheter vos produits ?</h2>
+                  <i class="material-icons">add</i>
+            </div>
+            <div class="reponses">
+               <p>Nos produits sont disponibles à la vente en ligne sur nos sites partenaires
+                   tels que Fnac/Darty, Amazon, Cdiscount, Conforama, But et Boulanger accessible 
+                   depuis notre site, ainsi qu’en vente en magasin dans les rayons de Boulanger et
+                    de Fnac/Darty.</p>
+            </div>
+         </div>
+         <div class="faq">
+            <div class="questions"> 
+                  <h2> Quels sont les moyens de paiement ? </h2>
+                  <i class="material-icons">add</i>
+            </div>
+            <div class="reponses">
+               <p>Les moyens de paiement acceptés sont ceux disponible sur nos sites partenaires dans
+                   lesquels nos produits sont en vente, nous nous sommes assurés que tous nos 
+                   partenaires possèdent un large panel de moyens de paiement afin que nos futurs clients
+                    puissent payer comme ils le souhaitent.</p>
+            </div>
+         </div>
+         <div class="faq">
+            <div class="questions"> 
+                  <h2> Quelles sont les utilités de vos produits ? </h2>
+                  <i class="material-icons">add</i>
+            </div>
+            <div class="reponses">
+               <p>Nos produits accompagneront nos clients quotidiennement pour les aider à mieux cisir leurs 
+                  aliments et leurs modes d’alimentation, en effet a l’aide d’un algorithme de personnalisation nos 
+                  produits identifient les goûts et envie de chaque client et proposent divers outils tels que la conception
+                  automatique produite de qualité supérieure en adéquation avec les profils clients ainsi qu’un programme
+                  d’aide pour les régimes par exemple.</p>
+            </div>
+         </div>
+         <div class="faq">
+            <div class="questions"> 
+                  <h2>Quelles sont les modalités de remboursement ?</h2>
+                  <i class="material-icons">add</i>
+            </div>
+            <div class="reponses">
+               <p>Nous nous engageons à rembourser entièrement nos clients si le produit s’avère défectueux et qu’il est
+                  signalé pendant la période de garantie de 2 ans après l’achat du produit. Cependant s'il devient défectueux 
+                  après la période de garantie les clients ont la possibilité de ramener leurs matériels défectueux et d’obtenir 
+                  50% de réduction sur le même produit.</p>
+            </div>
+         </div>
+         <div class="faq">
+            <div class="questions"> 
+                  <h2>Est-ce que 2Cool est une entreprise respectueuse de l’environnement ?</h2>
+                  <i class="material-icons">add</i>
+            </div>
+            <div class="reponses">
+               <p>Lors de la conception de nos produits nous mettons toujours le respect de l’environnement dans les premières priorités,
+                en effet nos produits ont été pensé pour être fabriqué en grande partie à l’aide de matériaux entièrement recyclables 
+               et pour limiter la consommation d’électricité au maximum.
+               </p>
+            </div>
+         </div>
+         <div class="faq">
+            <div class="questions"> 
+                  <h2>Comment contacter le service client ?</h2>
+                  <i class="material-icons">add</i>
+            </div>
+            <div class="reponses">
+               <p>Sur notre site nos clients ont accès à un onglet contact du support client, en effet nous mettons à disposition pour nos clients un numéro de télépne et un mail afin de vous accompagner dans l’utilisation du produit, nous avons des conseillers performants qui sont à même d’aider nos clients à mettre en route notre produit et a régler d’éventuels problèmes.  
+               </p>
+            </div>
+         </div><div class="faq">
+            <div class="questions"> 
+                  <h2>Pourquoi 2Cool ?</h2>
+                  <i class="material-icons">add</i>
+            </div>
+            <div class="reponses">
+               <p>L’entreprise se nomme 2cool car c’est un jeu de mots entre « cool » qui signifie refroidir, frais et « to cool » qui signifie trop cool en remplaçant « to » par un 2 qui se prononce de la même manière.
+               </p>
+            </div>
+         </div>
+         <div class="faq">
+            <div class="questions"> 
+                  <h2> Quels sont les objectifs de 2Cool ?</h2>
+                  <i class="material-icons">add</i>
+            </div>
+            <div class="reponses">
+               <p>Nos objectifs sont d’aider le plus de personnes possible à garder une alimentation saine et équilibré afin de participer à l’entretien d’une bonne santé générale et de réduire les problèmes de santé en diminuant la consommation de produits qui nuisent à la santé.</p>
+            </div>
+         </div>
+
+
+
+
+
+      </div>
+   </main> 
+
+      <footer id = "footer">
+         <div class = "footer" > 
+            <div class = "service" id = "service">
+               <h3>Besoin d'aide</h3>
+               <ul>
+                  <li> <a href="../Contact/contact.html">Contactez-Nous</a> </li>
+                  <li> <a  >Questions fréquentes</a></li>
+                  <li> <a href="../Plan/plan.html">Plan du site</a> </li>
+               </ul>
+            </div>
+
+            <div class = "contact" id ="contact">
+               <h3>A propos de 2Cool</h3>
+               <ul>
+                  <li> <a href="../Presentation/Presentation.html">Qui sommes nous </a> </li>
+                  <li> <a href="../engagement/engagement.html" >Nos engagement</a></li>
+                  <li> <a href="../Partenaires/partenaires.html" >Partenaires</a> </li>
+                
+               </ul>
+            </div>
+            <div class = "trait"> 
+               <br>
+               <p>Copyright &#xa9; 2022 </p>
+               <p>Tous droits réservés 2Cool</p>
+            </div>
+            <div class="follow">
+               <h3> Suivez-nous</h3>
+            </div>
+               <div class="reseaux">
+                  <a href="https://fr-fr.facebook.com" target="_blank"></a>
+                  <a href="https://www.instagram.com/?hl=fr" target="_blank"> </a>
+                  <a href="https://twitter.com/home" target="_blank"></a>
+               </div>
+            </div>  
+      </footer>
+      <script src="../JS/index.js"></script>
+   </body>
+</html>

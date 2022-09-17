@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../CSS/index.css">
+<link rel="icon" type="image/x-icon" href="../images/icone.ico">
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+<title>Produit</title>
+</head>
+   <body>
+      <button id = "bouton" onclick="up()" ><i class="material-icons">arrow_upward</i></button>
+      <div id = "Menu"  class ="menu">
+            <span id="ferme" onclick="fermemenu()">&#215;</span>
+         <div class = "deroulant">
+            <p> <i class="material-icons"><a href="../index.html">home</a> </i></p>
+            <p onclick="burger1()"><i class="material-icons">kitchen</i></p>
+               <div id = "sous-liste1" class="liste-menu">
+                  <ul>
+                     <li><a href="../Produit/produit.html#1" >Le Classico</a></li>
+                     <li><a href="../Produit/produit.html#2" >Le Mono</a></li>
+                     <li><a href="../Produit/produit.html#3" >Le Royal</a></li>
+                  </ul>
+               </div> 
+            <p> <i class="material-icons"><a href="../FAQ/faq.html">    forum</a> </i></p>
+            <p> <i class="material-icons"><a href="../Contact/contact.html">email</a> </i></p>
+               
+   
+         </div>
+      </div>
+      <header id="header"  class = "header">   
+       
+         <div class="tete">  
+              <div id="menuburger">
+          <span  onclick="ouvremenu()">&#9776;</span>
+         </div>
+            <h1>2Cool </h1>
+         </div>
+       
+      <nav id = "nav" class = "nav"> 
+         <ul >
+            <li> <i class="material-icons"><a href="../index.html">home</a></i></li>
+            <li > <i class="material-icons">kitchen</i>
+               <ul class="menu-sous-liste">
+                  <li><a href="../Produit/produit.html#1" >Le Classico</a></li>
+                  <li><a href="../Produit/produit.html#2" >Le Mono</a></li>
+                  <li><a href="../Produit/produit.html#3" >Le Royal</a></li>
+               </ul>
+            </li>
+            <li > <i class="material-icons"><a href="../FAQ/faq.html">  forum</a></i>
+
+            <li > <i class="material-icons"><a href="../Contact/contact.html">email</a></i> </li>
+         </ul>
+      </nav>
+   </header>
+  
+  
+   <main id = "main" class ="main">
+      <div class = "contenu_produit">
+
+            <div id="1" class = "partie">
+                <div class = "image">
+                   <img src="../images/Classico.png" alt="Un  frigo">
+                </div>
+                <div class = "texte">
+                   <h2> Le Classico</h2>
+                   <ul>
+                      <li>Prix : 799€</li>
+                      <li>Dimensions : Largeur : 60 cm, Profondeur: 65 cm, Hauteur : 185 cm</li>
+                      <li>Volume : 332 Litres</li>
+                      <li>Classe énergétique E</li>
+                      <li>Consommation (annuelle) : 248kWh</li>
+                   </ul>
+                   <p>...</p>
+                   <p class = "suite"><br>Le Classico : c’est notre produit le plus bon-marché il
+                     offre toute la qualité et l'efficacité  du Mono notre technologie d’aide à
+                     la consommation en moins afin de garantir un prix avantageux et pour satisfaire
+                     même ceux qui souhaite profiter de nos produit mais ne souhaitent pas avoir
+                     d'assistant.</p>
+                   <a class = "bouton">Voir plus</a>
+                </div>
+             </div>
+    
+    
+             <div id="2" class = "partie">
+                <div class = "image">
+                   <img src="../images/Mono.png" alt="Un  frigo">
+                </div>
+                <div class = "texte">
+                   <h2> Le Mono </h2>
+                   <ul>
+                      <li>Prix : 1199€</li>
+                      <li>Dimensions : Largeur : 60 cm, Profondeur: 65 cm, Hauteur : 185 cm</li>
+                      <li>Volume : 332 Litres</li>
+                      <li>Classe énergétique E</li>
+                      <li>Consommation (annuelle) : 257kWh</li>
+                   </ul>
+                   <p>...</p>
+                   <p class = "suite"><br>Le Mono : c’est notre produit phare, il associe efficacité,
+                     domotique, esthétique et facilité d’utilisation. Le réfrigérateur est équipé
+                     d’un écran tactile et de notre application 2Cool qui permet de suivre sa
+                     consommation et nos reserves. l’application permet également de suivre des
+                     recettes très facilement, de paramétrer des commandes automatiques si l’objet
+                     venait à manquer ... <a href="../Application/application.html"> (voir application)</a></p>
+                   <a class = "bouton">Voir plus</a>
+                </div>
+             </div>
+    
+    
+          <div id="3" class = "partie">
+             <div class = "image">
+                <img src="../images/Royal.png" alt="Un  frigo">
+             </div>
+             <div class = "texte">
+               
+                <h2> Le Royal </h2>
+                <ul>
+
+                   <li>Prix : 2199€</li>
+                   <li>Dimensions : Largeur 91 cm, Profondeur : 73 cm, Hauteur : 179 cm</li>
+                   <li>Volume : 415 Litres</li>
+                   <li>Classe énergétique F</li>
+                   <li>Consommation (annuelle) : 387kWh</li>
+    
+                </ul>
+                <p>...</p>
+                <p class = "suite"><br>Le Royal : c’est une version améliorée de notre offre Mono,
+                   car en plus de profiter de notre technologie et de notre application, le royal
+                   possède de nouvelles caractéristiques comme un distributeur de glaçons et d’eau
+                   froide et un volume plus grand que le Mono tout en étant doté de notre
+                   application d’assistance à la consommation <a href="../Application/application.html"> (voir application)</a>.</p>
+                <a class = "bouton">Voir plus</a>
+             </div>
+          </div>
+       </div>
+  
+      </main> 
+
+      <footer id = "footer">
+         <div class = "footer" > 
+            <div class = "service" id = "service">
+               <h3>Besoin d'aide</h3>
+               <ul>
+                  <li> <a href="../Contact/contact.html" >Contactez-Nous</a> </li>
+                  <li> <a href="../FAQ/faq.html" >Questions fréquentes</a></li>
+                  <li> <a href="../Plan/plan.html">Plan du site</a> </li>
+               </ul>
+            </div>
+
+            <div class = "contact" id ="contact">
+               <h3>A propos de 2Cool</h3>
+               <ul>
+                  <li> <a href="../Presentation/Presentation.html">Qui sommes nous </a> </li>
+                  <li> <a href="../engagement/engagement.html" >Nos engagement</a></li>
+                  <li> <a href="../Partenaires/partenaires.html" >Partenaires</a> </li>
+                  <li> <a href="../Application/application.html" >Application</a> </li>
+                
+               </ul>
+            </div>
+            <div class = "trait"> 
+               <br>
+               <p>Copyright &#xa9; 2022 </p>
+               <p>Tous droits réservés 2Cool</p>
+            </div>
+            <div class="follow">
+               <h3> Suivez-nous</h3>
+            </div>
+               <div class="reseaux">
+                  <a href="https://fr-fr.facebook.com" target="_blank"></a>
+                  <a href="https://www.instagram.com/?hl=fr" target="_blank"> </a>
+                  <a href="https://twitter.com/home" target="_blank"></a>
+               </div>
+            </div>  
+      </footer>
+      <script src="../JS/index.js"></script>
+   </body>
+</html>

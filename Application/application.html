@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../CSS/index.css">
+<link rel="icon" type="image/x-icon" href="../images/icone.ico">
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+<title>Accueil</title>
+</head>
+   <body>
+      <button id = "bouton" onclick="up()" ><i class="material-icons">arrow_upward</i></button>
+      
+      <div id = "Menu"  class ="menu">
+            <span id="ferme" onclick="fermemenu()">&#215;</span>
+         <div class = "deroulant">
+            <p> <i class="material-icons"><a href="../index.html">home</a> </i></p>
+            <p onclick="burger1()"><i class="material-icons">kitchen</i></p>
+            <div id = "sous-liste1" class="liste-menu">
+               <ul>
+                  <li><a href="../Produit/produit.html#1" >Le Classico</a></li>
+                  <li><a href="../Produit/produit.html#2" >Le Mono</a></li>
+                  <li><a href="../Produit/produit.html#3" >Le Royal</a></li>
+               </ul>
+            </div> 
+             <p> <i class="material-icons"><a href="../FAQ/faq.html">    forum</a> </i></p>
+            <p> <i class="material-icons"><a href="../Contact/contact.html">email</a> </i></p>
+           
+         </div>
+      </div>
+
+      <header id="header" class="header">   
+         <div class="tete">  
+            <div id="menuburger">
+               <span  onclick="ouvremenu()">&#9776;</span>
+            </div>
+           
+            <h1>2Cool</h1>
+         </div>
+         <nav id = "nav" class = "nav"> 
+            <ul >
+              <li> <p> <i class="material-icons"><a href="../index.html">home</a> </i></p></li>
+               <li > <i class="material-icons"><a>kitchen</a></i>
+                  <ul class="menu-sous-liste">
+                     <li><a href="../Produit/produit.html#1" >Le Classico</a></li>
+                     <li><a href="../Produit/produit.html#2" >Le Mono</a></li>
+                     <li><a href="../Produit/produit.html#3" >Le Royal</a></li>
+                  </ul>
+               </li>
+               <li > <i class="material-icons"><a href="../FAQ/faq.html">   forum</a></i></li>
+
+               <li > <i class="material-icons"><a href="../Contact/contact.html">email</a></i></li>
+            </ul>
+         </nav>
+      </header>
+   <main id = "main" class ="main">
+      <section id="texte" class = "contenu">
+         <div class = "partie">
+            <div class = "texte">
+               <h2>Application</h2>      
+            </div> 
+         </div> 
+         <div class="partie">
+            <div class = "texte">
+               
+                  <ul>
+                     <li>- Permet de suivre le remplissage du frigo en temps réel de n'importe où.</li>
+                     <li>- Propose des produits similaires à ceux que nous consommons moins chers ou meilleurs pour la santé.</li>
+                     <li>- Propose directement un panier de courses pour remplir votre frigo où peut vous envoyer une notification pour vous le rappeler.</li>
+                     <li>- Répertorie les promotions disponibles sur des articles en fonction de vos habitudes</li>
+                     <li>- Vous propose des recettes en fonction de ce qu’il y a dans votre frigo.</li>
+                     <li>- Vous permet de suivre ces recettes via l'écran étape par étape.</li>
+                     <li>- *Vous permet de planifier des paniers automatiques si des éléments venaient à manquer</li>
+                     <li>- *Vous rappel la présence des produits qui arrivent à péremption.</li>
+                     <li>- *Propose plusieurs applications qui interagissent avec l'écran (Youtube, Spotify, Etc)</li>
+                  </ul> 
+            
+                  <p>* = nouveauté</p>
+               </div>  
+         </div>
+        
+      </section>
+      <div  class = "sidebar" >  
+            <div>
+               <h2>Actualité </h2>
+            </div>
+            <div>  
+               <h2><i class="material-icons"> shopping_basket</i> </h2>
+               <p>Code promo : <br>2Cool  <br> -15% jusqu'au 22 février</p>
+              
+            </div>
+            <div>  
+               <h2><i class="material-icons"> person_add</i> </h2>
+               <p>Recrutement 2 ingénieurs pour février 2022</p>
+            </div>
+            <div>
+               <h2><i class="material-icons"> public</i> </h2>
+               <p>Conférence:</p>
+               <ul>
+                  <li>Paris: 25/04</li>
+                  <li>Grenoble: 14/06 </li>
+                   <li>Metz 01/08</li>
+               </ul>
+            </div>
+      </div>  
+      </main> 
+
+      <footer id = "footer">
+         <div class = "footer" > 
+            <div class = "service" id = "service">
+               <h3>Besoin d'aide</h3>
+               <ul>
+                 <li> <a href="../Contact/contact.html" >Contactez-Nous</a> </li>
+                  <li> <a href="../FAQ/faq.html" >Questions fréquentes</a></li>
+                  <li> <a href="../Plan/plan.html">Plan du site</a> </li>
+               </ul>
+            </div>
+
+            <div class = "contact" id ="contact">
+               <h3>A propos de 2Cool</h3>
+               <ul>
+                  <li> <a href="../Presentation/Presentation.html">Qui sommes nous </a> </li>
+                  <li> <a href="../engagement/engagement.html" >Nos engagement</a></li>
+                  <li> <a href="../Partenaires/partenaires.html" >Partenaires</a> </li>
+                
+               </ul>
+            </div>
+            <div class = "trait"> 
+               <br>
+               <p>Copyright &#xa9; 2022 </p>
+               <p>Tous droits réservés 2Cool</p>
+            </div>
+            <div class="follow">
+               <h3> Suivez-nous</h3>
+            </div>
+               <div class="reseaux">
+                  <a href="https://fr-fr.facebook.com" target="_blank"></a>
+                  <a href="https://www.instagram.com/?hl=fr" target="_blank"> </a>
+                  <a href="https://twitter.com/home" target="_blank"></a>
+               </div>
+            </div>  
+      </footer>
+      <script src="../JS/index.js"></script>
+   </body>
+</html>

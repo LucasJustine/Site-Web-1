@@ -1,0 +1,833 @@
+﻿@font-face {
+    font-family:'Atkinson Hyperlegible';
+    src: url("./style1.woff2") format("woff2");
+}
+@font-face {
+     font-family:'Bebas Neue';
+     src: url("./style2.woff2") format("woff2");
+ }
+@font-face {
+    font-family:'Be Vietnam Pro';
+    src: url("./style3.woff2") format("woff2");
+}
+
+/*------------------------------------------------------------------------------------------------ Initialisation des éléments à 0-------------------------------------------------------------------------------------*/
+
+/* l'élément pour le menu burger n'est pas présent sur les grands écrans*/
+ #menuburger {
+    display: none;
+ }
+ /* la classe pour le menu  n'est pas présent sur les grands écrans*/
+.menu  {
+     display: none ;
+ }
+ /* l'élément pour le menu n'est pas présent sur les grands écrans*/
+#menu { 
+    display: none;
+}
+/*Réinitialisation des marges, padding ...*/
+ *, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* l'élément <li> n'a plus de puce*/
+li {
+    list-style-type: none;
+}
+/* les images contenant les logos des reseaux sociaux sont initialisés*/
+a[href*="instagram"]{
+    display: inline-block ;
+    background-image:url("../images/insta.png");
+    width: 2vw;
+    height: 2vw;
+    background-size: cover;
+}
+a[href*="twitter"]{
+    display: inline-block ;
+    background-image:url("../images/twitter.png");
+    width: 2vw;
+    height: 2vw;
+    background-size: cover;
+    margin-right: 2em;
+}
+a[href*="facebook"]{
+    display: inline-block ;
+    background-image:url("../images/facebook.png");
+    width: 2vw;
+    height: 2vw;
+    background-size: cover;
+}
+/*------------------------------------------------------------------------------------------------------------- CSS du site------------------------------------------------------------------------------------------- */
+
+/* Correspond au bouton pour remonter en haut qui apparait lors du defilement de la page */
+#bouton {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    font-size: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    width: 30px;
+    height: 0px;
+    background-color: #00c4ff ;
+    transition: 0.5s;  
+}
+/* le body est en mode colonne pour faciliter la mise en place du footer qui reste en bas*/
+body {
+
+    font-size: 1.5em;
+    display: flex;
+	flex-direction: column;
+    min-height: 100vh;
+}
+
+/*----- Initialisation des caractéristiques pour tous les éléments <a> des pages----------*/
+a {
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 5px 2px 5px #696969;
+}
+
+a:hover{
+    transition: 0.5s;
+    color: cyan;
+    background-color: black;
+    box-shadow: 0 0 10px #33ffff,
+                0 0 10px #33ffff;
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+    border-radius: 50px;
+}
+/*----- FIN initialisation des caractéristiques pour tous les éléments <a> des pages----------*/
+
+
+/*----------------------------------- CSS pour le header ------------------------------------ */
+
+/* Css seulement utile pour la page d'accueil */
+h1,h2,h3 {
+    font-family: 'Atkinson Hyperlegible';
+    text-align: center;
+}
+.accueil{
+    background-image: url("../images/cottonbro.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+#accueil {
+    color: white;
+    text-align: center;
+    margin-top: 25vh;
+}
+
+/* FIN Css seulement utile pour la page d'accueil */    
+
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: #000133;    
+    transition: 0.5s;
+}
+/* Classe pour le logo dans le header*/
+.tete {
+    margin-bottom: 0.5em;
+    width: 100%;
+    display: flex;
+}
+.tete img {
+    width: 10%;
+    }
+.tete h1 { 
+    display: inline-block;
+    margin: auto;
+    color: white;
+    text-shadow: 5px 4px 5px #1c10ef;
+}
+/* Classe pour la barre de navigation */
+
+.nav {
+    width: 100%;
+    height: 50px;
+    transition: 1.5s;
+}
+.nav a {
+    cursor: pointer;
+    color: white;
+}
+.nav i {
+    transition: 0s;
+}
+.nav i:hover{
+    transition: 1s;
+    transform: scale(1.15);
+
+}
+
+.nav > ul{
+    display: flex;
+    justify-content: center;
+}
+
+.nav li {
+    flex-grow: 1;
+    color: white;
+    text-align: center;
+    margin: 0.5% 5%; 
+    
+}
+
+.menu-sous-liste{
+    position: relative;
+    top: 5%;
+    right: 5%;
+    max-height: 0px;
+    transition: 1.5s;
+    overflow: hidden;
+}
+.menu-sous-liste  li {
+    text-shadow: none;
+    text-align: center;
+    width: 100%;
+    padding: 0 10px;
+    background-color: rgb(61, 61, 61);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.menu-sous-liste li a {
+    text-shadow: none;
+}
+
+.nav ul li:hover > ul {
+    max-height: 100%;
+}
+
+/* Fin CSS pour le header */
+
+/* CSS pour le main */
+
+
+#main {
+    flex-grow: 1;
+    display: flex;
+    background-color: #ffffff; 
+}
+/* CSS pour le sidebar */
+
+.sidebar { 
+    font-family:'Bebas Neue';
+    color: white;
+    flex-shrink: 0;
+    width: 19%;
+    display: grid;
+    grid-template-rows: 15% 1fr 1fr 1fr;
+    background-color: #000133;
+}
+.sidebar > div {
+    text-align: center;
+    margin: auto;
+    flex-grow: 1;
+    display: block;
+}
+    
+/* CSS pour le contenu */
+.contenu { 
+   width: 100%;
+   display: grid;
+   grid-template-rows: 1fr;
+}
+ .contenu_produit > .partie{
+    scroll-margin-top: 7rem;
+    border-bottom: 10px solid;
+    min-height:87vh;
+    border-radius: 0;
+ }
+.contenu_produit .texte {
+    box-shadow:  5px 10px 18px;
+    background-color: rgb(189, 189, 189);
+    max-width: 40vw;
+}
+.contenu_produit .image {
+    flex-shrink: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+}
+
+/* CSS pour le contenu de la page partenaire */
+.contenu_parts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    flex-grow: 1;
+}
+/* CSS pour le texte de l'accueil */
+#texte_accueil {
+    grid-auto-rows: 55vh;
+    background-color: #c8f2ff;
+}
+#texte_accueil .texte {
+    max-width: 35vw;
+}
+#texte_accueil .partie:nth-child(2) {
+    background: linear-gradient(108deg, rgba(0,12,71,1) 5%, rgba(0,75,101,1) 55%, rgba(0,241,255,1) 98%);
+}
+#texte_accueil .partie:nth-child(4) {
+    background: linear-gradient(270deg, rgba(0,12,71,1) 3%, rgba(0,75,101,1) 48%, rgba(0,241,255,1) 99%);
+    
+}
+/* CSS pour le texte en general */
+.texte{
+    font-family: 'Be Vietnam Pro';
+    margin: auto;
+    padding: 2rem;
+
+}
+.texte li {
+    font-weight: bold;
+   margin: 1rem 0;
+}
+.texte a:hover {
+    box-shadow: none;
+    color: blue;
+    background-color: transparent;
+}
+.partie{
+    color: rgb(0, 0, 0);
+    display: flex;
+    width: 100%;
+    margin: 4rem 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+}
+.plan{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+}
+.plan .texte {
+    margin: 0;
+    text-align: center;
+}
+.plan h2 {
+  text-decoration: underline;
+}
+.partenaires {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-auto-rows: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0.4rem;
+
+}
+.partenaires a {
+    color: black;
+}
+.partenaires a:hover {
+    box-shadow: none;
+    background-color: transparent;
+}
+.partenaires img {
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+.presentation {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    text-align: center;
+
+}
+.presentation div {
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em ;
+}
+.presentation p{
+    margin:0 5em;
+}
+.photo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.cv {  
+    width: 100%;
+    height: auto; 
+}
+.cv img {
+    width: 50%;
+}
+
+.histoire {
+    font-family: 'Bebas Neue';
+    margin: auto;
+    text-align: center;
+}
+.histoire button {
+    font-size: 0.5em;
+    padding: 1em;
+}
+/* CSS pour le texte du bouton suite */
+.suite {
+    display: none;
+}
+/* CSS pour le bouton suite */
+.bouton{
+    color: rgb(0, 0, 0);
+    cursor: pointer;    
+}
+.image {
+    flex-shrink: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 30%;
+    height: auto;
+}
+
+/* CSS pour l'image de l'accueil */
+.img_accueil{
+    flex-shrink: 0;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS pour la page FAQ */
+.faq{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+.faq div:last-child {
+    margin-bottom: 1em; 
+}
+.questions {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    margin-top: 0.5rem;
+    background-color: #000133;
+    color: #00c4ff ;
+}
+.questions i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.questions h2 {
+    text-align: left;
+    padding: 0.5em;
+}
+.reponses {
+    max-height: 0 ;
+    transition: 1.5s ease-in-out;
+    background-color: rgb(231, 229, 229);
+    overflow: hidden;
+    border-radius: 0px 0px 10PX 10px;
+}
+.reponses p {
+    padding: 1em;
+}
+
+/* CSS pour la page contact */
+
+.formulaire {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(90deg, rgb(116,116,116) 50% ,rgb(255, 255, 255) 50%);
+}
+.aide {
+    color: white;
+    margin: 1em;
+}
+.aide h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+#message {
+    resize: none;
+    width: 100%;
+    height: 50vh;
+}
+form {
+    margin-top: 2em;
+}
+.colonne {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    row-gap: 1em;
+}
+.colonne img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    height: auto;
+}
+input {
+    border: none;
+    border-radius: 4px;
+
+}
+input:focus {
+    background-color: lightblue;
+}
+#message {
+    height: 40vh;
+}
+#envoyer, #reset{
+    margin: auto;
+    height: 5vh;
+    width: 50%;
+}
+.contacts {
+    margin: 1em;
+    display: grid;
+    grid-template-rows : 1fr 1fr 70%;
+    text-align: center;
+}
+.texte a {
+    color: black;
+}
+.contacts div {
+    margin: auto;
+    text-align: center;
+
+}
+#map {
+    margin: 0;
+}
+
+#map iframe {
+    display: block;       
+    background: #000;    
+    width: 100%;
+    height: 100%;
+}
+/* Fin CSS pour le main */
+
+/* CSS pour le footer */
+footer {
+    transition: 0.5s;
+    background-color: #000133;
+    /*background-image: linear-gradient(to bottom right, rgb(25, 85, 214), rgb(0, 174, 255));*/
+    color: white;
+}   
+   
+.footer {
+    font-family: 'Bebas Neue';
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    
+}
+.service, .contact{
+    flex-grow: 1;
+}
+
+.footer li {
+    margin-top: 0.2em;
+    font-size: 1.1em;
+}
+h3 {
+    text-shadow: 5px 2px 5px #696969;
+}
+
+.trait {
+    width: 100%;
+    border-top: 3px solid rgb(255, 255, 255);
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    text-align:center ;
+}
+.follow {
+    margin: auto;
+    width: 20%;
+}
+.reseaux {
+    width: 75%;
+    text-align:right;
+    margin-top: 0.2em;
+    margin-right: 0.5em;
+}
+.reseaux img {
+    margin-left: 1em;
+}
+.reseaux i {
+    font-size: 2em;
+}
+.reseaux a:hover{
+    color: cyan;
+    box-shadow:none;
+    text-decoration: none;
+}
+.icone {
+    width: 50px;
+}
+/* -----------------------------------------------------------------------------------------------------------Pour petit écran ----------------------------------------------------------------------------------------*/
+@media screen and (max-width: 720px){
+
+    body {
+        font-size: 1em;
+    }
+
+   
+    .accueil{
+        background-image: url("../images/fond2.png");
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.5s;
+    }
+    #accueil {
+        color: white;
+        font-size: 1em;
+        margin-top: 25vh;
+    }
+
+    .tete img {
+        width: 0%;
+    }
+    .tete {
+        font-size: 0.7em;
+    }
+    #main {
+        margin: 0px;
+    }
+    /* Enleve la barre de naviguation */
+    nav {
+        display: none;
+    }
+    /* Enleve la sidebar */
+    .sidebar {
+
+        display: none;
+    }
+    /* Réduit la marge entre le titre et le logo */
+    .contenu {
+        width: 100%;
+        flex-direction: column;
+    }
+    .contenu a {
+        color: #000;
+    }
+    .partie {
+        margin: 0;
+        flex-direction: column;
+        flex-grow: 1;
+        border-radius: 0em;
+    }
+    .texte, .texte h2{
+        margin: 1em;
+        padding: 0em 1em;
+        flex-grow: 1;
+    }
+    #texte_accueil {
+        margin: 0;
+        display: grid;
+        grid-auto-rows: auto;
+    }
+    .img_accueil{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .img_accueil img{
+        width: 80%;
+    }
+    .image {
+        max-width: 80%;
+    }
+  
+    #menuburger {
+        display: inline-block;
+        position: sticky;
+        cursor: pointer;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: 0.4em;
+        font-size: 3em;
+        color: #0C5BD2;
+    }
+    #ferme {
+        display: inline-block;
+        width: 20%;
+        position: relative;
+        left: 10%;
+        font-size: 2.5em;
+        color: white;
+    }
+
+    .menu  {    
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: black;
+        overflow-x: hidden;
+        transition: 0.5s;
+        
+    }
+   
+    .deroulant {
+        margin-top: 20%;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .deroulant p {
+        margin-top: 15vh;
+    }
+    .liste-menu{
+        max-height: 0em;
+        overflow-x: hidden;
+        transition: 0.7s;
+    }
+    .liste-menu li {
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .service, .contact{
+        font-size: 0.8em;
+    }
+    .reseaux i {
+        font-size: 1em;
+    }
+    .follow {
+        margin: auto;
+        width: 100%;
+    }
+    .reseaux {
+        width: 100%;
+        text-align:center;
+        margin-top: 0.2em;
+        margin-right: 0em;
+    }
+    .footer li { 
+        font-size: 1em;
+        margin-top: 1em;
+}
+    a[href*="instagram"]{
+        display: inline-block ;
+        background-image:url("../images/insta.png");
+        width: 8vw;
+        height: 8vw;
+        background-size: cover;
+    }
+    a[href*="twitter"]{
+        display: inline-block ;
+        background-image:url("../images/twitter.png");
+        width: 8vw;
+        height: 8vw;
+        background-size: cover;
+        margin-right: 0em;
+    }
+    a[href*="facebook"]{
+        display: inline-block ;
+        background-image:url("../images/facebook.png");
+        width: 8vw;
+        height: 8vw;
+        background-size: cover;
+    }
+
+    .questions{
+        font-size: 0.7em;
+    }
+    .reponses p {
+        padding: 0.5em;
+    }
+    .formulaire{
+        grid-template-columns: 1fr;
+        background-image: none;
+        font-size: 80%;
+    }
+    .presentation {
+        grid-template-columns: 1fr;
+        
+    }
+    .colonne {
+        display: grid;
+        grid-template-columns: 1fr ;
+        row-gap: 1em;
+        text-align: center;
+    }
+    input {
+        padding: 5%;
+    }
+    .aide {
+        margin: 0%;
+        background-color: black;
+    }
+    .aide form {
+        margin: 0.5em;
+    }
+    .contacts div {
+        margin: 0.5em 0em;
+    }
+    #map {
+        margin-bottom: 10%;
+    }
+    .presentation p{
+        margin: 0.1em;
+    }
+    .presentation div{
+        border: none;
+    }
+    
+    .contenu_parts {
+        margin: 0 0.2em;
+    }
+    .contenu_produit .image {
+        max-width: 100%;
+    }
+    .contenu_produit .texte {
+        max-width: 100vw;
+    }
+    #texte_accueil .texte {
+    max-width: 100vw;
+    }
+    .plan{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 0em;
+    }
+}

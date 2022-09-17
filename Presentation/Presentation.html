@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../CSS/index.css" media="screen">
+<link rel="stylesheet" href="../CSS/impression.css" type="text/css" media="print">
+<link rel="icon" type="image/x-icon" href="../images/icone.ico">
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+<title>Présentation</title>
+</head>
+   <body>
+      <button id = "bouton" onclick="up()" ><i class="material-icons">arrow_upward</i></button>
+      <div id = "Menu"  class ="menu">
+            <span id="ferme" onclick="fermemenu()">&#215;</span>
+         <div class = "deroulant">
+            <p> <i class="material-icons"><a href="../index.html">home</a> </i></p>
+            <p onclick="burger1()"><i class="material-icons">kitchen</i></p>
+               <div id = "sous-liste1" class="liste-menu">
+                  <ul>
+                     <li><a href="../Produit/produit.html#1" >Le Classico</a></li>
+                     <li><a href="../Produit/produit.html#2" >Le Mono</a></li>
+                     <li><a href="../Produit/produit.html#3" >Le Royal</a></li>
+                  </ul>
+               </div> 
+            <p> <i class="material-icons"><a href="../FAQ/faq.html">    forum</a> </i></p>
+            <p> <i class="material-icons"><a href="../Contact/contact.html">email</a> </i></p>
+               
+   
+         </div>
+      </div>
+      <header id = "header" class = "header">   
+       
+         <div class="tete">  
+              <div id="menuburger">
+          <span  onclick="ouvremenu()">&#9776;</span>
+         </div>
+            <h1>2Cool </h1>
+         </div>
+       
+      <nav id = "nav" class = "nav"> 
+         <ul >
+            <li> <i class="material-icons"><a href="../index.html">home</a></i></li>
+            <li > <i class="material-icons">kitchen</i>
+               <ul class="menu-sous-liste">
+                  <li><a href="../Produit/produit.html#1" >Le Classico</a></li>
+                  <li><a href="../Produit/produit.html#2" >Le Mono</a></li>
+                  <li><a href="../Produit/produit.html#3" >Le Royal</a></li>
+               </ul>
+            </li>
+            <li > <i class="material-icons"><a href="../FAQ/faq.html">  forum</a></i>
+
+            <li > <i class="material-icons"><a href="../Contact/contact.html">email</a></i> </li>
+         </ul>
+      </nav>
+   </header>
+  
+   <main id = "main" class ="main">  
+      <div class = "contenu">
+         <div class = "partie">
+            <div class = "histoire">
+               <h2>Histoire</h2>  
+                  <p>2Cool c'est 4 étudiants qui rentrent chaque jour chez eux, le réfrigerateur vide. <br>
+                  Comment bien se nourrir, quand on a pas le temps de faire les courses ? <br> De ce problème est née la solution, 2COOL. Quand on a pas le temps, 2COOL nous le rend.  </p>
+
+            </div>
+         </div>
+
+         <div class = "presentation">
+
+            <div> 
+               <img class="photo" src="../images/lucas.jpg" alt="tete">
+               <h2>JUSTINE Lucas</h2>
+               <p>Directeur de l’entreprise. </p>
+               <p>Elabore la stratégie globale de l'entreprise et donc ses objectifs, notamment commerciaux.</p>
+            </div>
+            <div class="cv" >
+               <img id = "lucas" src="../images/CV.png" alt="cv" >
+               <button class="imprimer">Imprimer</button>
+            </div>
+              <div> 
+               <img   class="photo" src="../images/victor.jpg" alt="tete">
+               <h2>DESCAMPS Victor</h2>
+               <p>Directeur de l’entreprise. </p>
+               <p>Chef du département de développement de nos produits ainsi que de nos logiciels, assure aussi la bonne maintenance de notre site.</p>
+            </div>
+            <div class="cv" >
+               <img id = "victor"  src="../images/CV-Victor.png" alt="cv" >
+               <button class="imprimer">Imprimer</button>
+            </div>
+              <div> 
+               <img  class="photo" src="../images/claire.jpg" alt="tete">
+                  <h2>GOBERT Claire</h2>
+               <p>chef du département gestion des partenariats,</p>
+               <p>Assure d’entretenir de bonnes relations avec nos partenaires commerciaux. </p>
+            </div>
+            <div class="cv" >
+               <img id = "claire" src="../images/CV_ClaireGobert.png" alt="cv" >
+               <button class="imprimer">Imprimer</button>
+            </div>
+              <div> 
+               <img class="photo" src="../images/thomas.jpg" alt="tete">
+               <h2>BOUCHET Thomas</h2>
+               <p>
+                 Chef du département logistique 
+               </p>
+               <p>
+                  Assure de la bonne réception des pièces nécessaires à la fabrication de nos produits, qu’elles soient bien entreposées ainsi que bien redistribués dans les différentes usines de production.
+               </p>
+            </div>
+            <div class="cv" >
+               <img id = "thomas"  src="../images/CV_Bouchet_Thomas.png" alt="cv" >
+               <button class="imprimer">Imprimer</button>          
+            </div>
+         </div>
+
+       <div class="histoire"> <button onclick="window.print()">Tout imprimer</button></div>
+      </div>   
+     
+     <!-- Bouton pour imprimer <button onclick="window.print()">Print this page</button> -->
+      </main> 
+
+      <footer id = "footer">
+         <div class = "footer" > 
+            <div class = "service" id = "service">
+               <h3>Besoin d'aide</h3>
+               <ul>
+                  <li> <a href="../Contact/contact.html" >Contactez-Nous</a> </li>
+                  <li> <a href="../FAQ/faq.html" >Questions fréquentes</a></li>
+                  <li> <a href="../Plan/plan.html">Plan du site</a> </li>
+               </ul>
+            </div>
+
+            <div class = "contact" id ="contact">
+               <h3>A propos de 2Cool</h3>
+               <ul>
+                  <li> <a>Qui sommes nous </a> </li>
+                  <li> <a href="../engagement/engagement.html" >Nos engagement</a></li>
+                  <li> <a href="../Partenaires/partenaires.html" >Partenaires</a> </li>
+                
+               </ul>
+            </div>
+            <div class = "trait"> 
+               <br>
+               <p>Copyright &#xa9; 2022 </p>
+               <p>Tous droits réservés 2Cool</p>
+            </div>
+            <div class="follow">
+               <h3> Suivez-nous</h3>
+            </div>
+               <div class="reseaux">
+                  <a href="https://fr-fr.facebook.com" target="_blank"></a>
+                  <a href="https://www.instagram.com/?hl=fr" target="_blank"> </a>
+                  <a href="https://twitter.com/home" target="_blank"></a>
+               </div>
+            </div>  
+      </footer>
+      <script src="../JS/index.js"></script>
+   </body>
+</html>

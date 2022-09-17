@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../CSS/index.css">
+<link rel="icon" type="image/x-icon" href="../images/icone.ico">
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+<title>Contact</title>
+</head>
+   <body>
+      <button id = "bouton" onclick="up()" ><i class="material-icons">arrow_upward</i></button>
+      
+      <div id = "Menu"  class ="menu">
+            <span id="ferme" onclick="fermemenu()">&#215;</span>
+         <div class = "deroulant">
+            <p> <i class="material-icons"><a href="../index.html">home</a> </i></p>
+            <p onclick="burger1()"><i class="material-icons">kitchen</i></p>
+               <div id = "sous-liste1" class="liste-menu">
+                  <ul>
+                     <li><a href="../Produit/produit.html" >Produit 1</a></li>
+                     <li><a href="../Produit/produit.html" >Produit 1</a></li>
+                     <li><a href="../Produit/produit.html" >Produit 1</a></li>
+                  </ul>
+               </div> 
+            <p> <i class="material-icons"><a href="../FAQ/faq.html">forum</a> </i></p>
+            <p> <i class="material-icons"><a href="../Contact/contact.html">email</a> </i></p>
+            
+               
+   
+         </div>
+      </div>
+      <header id = "header" class = "header">   
+       
+         <div class="tete">  
+              <div id="menuburger">
+          <span  onclick="ouvremenu()">&#9776;</span>
+         </div>
+            <h1>2Cool </h1>
+         </div>
+       
+      <nav id = "nav" class = "nav"> 
+         <ul >
+            <li> <i class="material-icons"><a href="../index.html">home</a></i></li>
+            <li > <i class="material-icons">kitchen</i>
+               <ul class="menu-sous-liste">
+                  <li><a href="../Produit/produit.html" >Produit 1</a></li>
+                  <li><a href="../Produit/produit.html" >Produit 1</a></li>
+                  <li><a href="../Produit/produit.html" >Produit 1</a></li>
+               </ul>
+            </li>
+            <li > <i class="material-icons"><a href="../FAQ/faq.html">  forum</a></i> </li>
+
+            <li > <i class="material-icons"><a href="../Contact/contact.html">email</a></i> </li>
+         </ul>
+      </nav>
+   </header>
+  
+      <main id = "main" class ="main">
+         <div class = "formulaire">
+            <div class="aide"> 
+               <h2>Besoin d'aide ?</h2>    
+               <form method="POST" action="https://dwarves.iut-fbleau.fr/requete.php">
+                  
+                  <div class= colonne >
+                     <label for="lastname">Nom : </label>
+                     <input type="text" name="lastname" id="lastname" placeholder="ex: Boulet" required>
+                     <label for="firstname">Prénom : </label>
+                     <input type="text" name="firstname" id="firstname" placeholder="ex: Paul" required>
+                  
+                     <label for="email">Adresse email : </label>
+                     <input type="email" name="email" id="email" placeholder="ex: Boulet.Paul@gmail.com" required>
+               
+              
+                     <label for="message">Description :</label>
+                     <textarea name="message" id="message" placeholder="Votre message.........." maxlength="1500"></textarea>
+
+                     <input type="submit" id = "envoyer" value="Envoyer">
+                     <input type="reset" id = "reset" value="Reset">
+                     </div>
+               </form>
+            </div>
+            <div class="contacts">
+               <div>
+                  <i class="material-icons">call</i>
+                  <p>06 67 85 05 02</p>
+                 </div>
+               <div>
+                  <i class="material-icons">mail</i>
+                <p>2Cool.contact@gmail.com</p>
+               </div>
+               <div id="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.95410646393!2d2.276995710919499!3d48.85883363958891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e0!3m2!1sfr!2sfr!4v1642084851555!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+               </div>
+            </div>
+         </div> 
+      </main> 
+      <footer id= "footer"></footer>
+      <script src="../JS/index.js"></script>
+   </body>
+</html>

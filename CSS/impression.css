@@ -1,0 +1,15 @@
+/*-------------------------------------------------------------------------------------------- CSS pour les pages imprimables -----------------------------------------------------------------------------------------*/
+
+@media print {
+    @page { 
+        size: auto;   
+        margin: 0; 
+    }   
+    .header, .nav,.footer, .histoire,#bouton,h2,p,.photo,button,#menu,.menu{
+        display: none;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    } 
+}
